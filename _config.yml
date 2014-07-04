@@ -1,7 +1,6 @@
 title: Mozilla Releases
 description: "A blog of automated and manual posts regarding Mozilla releases"
 email: release-mgmt@mozilla.com
-baseurl: ""
 github: "http://github.com/mozilla/release-blog"
 markdown: redcarpet
 pygments: true
