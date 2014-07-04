@@ -12,3 +12,30 @@ navigation:
   url: http://wiki.mozilla.org/Release_Management
 - title: Blog
   url: /index.html
+
+
+github: {
+    "hostname": "github.com",
+    "pages_hostname": "github.io",
+    "api_url": "https://api.github.com",
+    "environment": "dotcom",
+    "build_revision": "cbd866ebf142088896cbe71422b949de7f864bce",
+    "project_title": "Mozilla Releases",
+    "project_tagline": "A page of posts both automated and manual regarding Mozilla software releases.",
+    "owner_name": "mozilla",
+    "owner_url": "https://github.com/mozilla",
+    "repository_url": "https://github.com/mozilla/release-blog",
+    "repository_nwo": "mozilla/release-blog",
+    "repository_name": "release-blog",
+    "zip_url": "https://github.com/mozilla/release-blog/zipball/gh-pages",
+    "tar_url": "https://github.com/mozilla/release-blog/tarball/gh-pages",
+    "clone_url": "https://github.com/mozilla/release-blog.git",
+    "releases_url": "https://github.com/mozilla/release-blog/releases",
+    "issues_url": "https://github.com/mozilla/release-blog/issues",
+    "wiki_url": "https://github.com/mozilla/release-blog/wiki",
+    "language": null,
+    "is_user_page": false,
+    "is_project_page": true,
+    "show_downloads": true,
+    "url": "http://mozilla.github.io/release-blog" // (or the CNAME)
+}
