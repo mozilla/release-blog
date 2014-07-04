@@ -11,7 +11,7 @@ navigation:
 - title: Team Wiki
   url: http://wiki.mozilla.org/Release_Management
 - title: Blog
-  url: /index.html
+  url: release-blog/index.html
 
 
 github: {
