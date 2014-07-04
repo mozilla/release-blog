@@ -1,0 +1,11 @@
+title: Mozilla Releases
+description: "A blog of automated and manual posts regarding Mozilla releases"
+markdown: redcarpet
+pygments: true
+
+# Navigation
+navigation:
+- title: Team Wiki
+  url: http://wiki.mozilla.org/Release_Management
+- title: Blog
+  url: /index.html

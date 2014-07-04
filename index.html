@@ -1,0 +1,24 @@
+---
+layout: default
+title: Mozilla Releases
+---
+
+<div id="home">
+  <!-- allows us to put any number of posts at the top of the page -->
+  <div id="sticky">
+    {% for post in site.posts %}
+      {% for cat in post.categories %}
+        {% if cat == 'sticky' %}
+          {{ post.content }}
+          <hr />
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+  </div>
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
