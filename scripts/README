@@ -1,0 +1,14 @@
+In this directory, the scripts used by the release team for the blog post are
+stored.
+
+== stats-beta.sh ==
+
+Generate the diff between to beta versions.
+
+For example:
+scripts/stats-beta.sh ~/dev/mozilla/beta-src FIREFOX_32_0b1_RELEASE FIREFOX_32_0b2_RELEASE > _posts/$(date +"%Y-%m-%d")-fx-32-b1-to-b2.md
+
+Will generate the diff between beta 1 and beta 2 of Firefox 32.
+
+
+
