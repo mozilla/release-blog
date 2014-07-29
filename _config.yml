@@ -5,6 +5,7 @@ url: "http://mozilla.github.io/release-blog/"
 github: "http://github.com/mozilla/release-blog"
 markdown: redcarpet
 pygments: true
+permalink: release-blog/:title
 
 # Navigation
 navigation:
