@@ -6,7 +6,7 @@ stored.
 Generate the diff between to beta versions.
 
 For example:
-scripts/stats-beta.sh ~/dev/mozilla/beta-src FIREFOX_33_0b1_RELEASE FIREFOX_32_0b3_RELEASE > _posts/$(date +"%Y-%m-%d")-fx-33-b1-to-b2.md
+scripts/stats-beta.sh ~/dev/mozilla/beta-src FIREFOX_33_0b1_RELEASE FIREFOX_33_0b3_RELEASE > _posts/$(date +"%Y-%m-%d")-fx-33-b1-to-b2.md
 
 Will generate the diff between beta 1 and beta 2 of Firefox 33.
 
