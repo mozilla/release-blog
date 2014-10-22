@@ -6,12 +6,12 @@ stored.
 Generate the diff between to beta versions.
 
 For example:
-scripts/stats-beta.sh ~/dev/mozilla/beta-src FIREFOX_33_0b1_RELEASE FIREFOX_33_0b2_RELEASE > _posts/$(date +"%Y-%m-%d")-fx-33-b1-to-b2.md
+scripts/stats-beta.sh ~/dev/mozilla/beta-src FIREFOX_34_0b1_RELEASE FIREFOX_34_0b2_RELEASE > _posts/$(date +"%Y-%m-%d")-fx-34-b1-to-b2.md
 
-Will generate the diff between beta 1 and beta 2 of Firefox 33.
+Will generate the diff between beta 1 and beta 2 of Firefox 34.
 
 For RC release, checkout the release branch and run:
-scripts/stats-beta.sh ~/dev/mozilla/release-src FIREFOX_33_0b9_RELEASE FIREFOX_33_0_BUILD1 > _posts/$(date +"%Y-%m-%d")-fx-33-b9-to-rc.md
+scripts/stats-beta.sh ~/dev/mozilla/release-src FIREFOX_34_0b9_RELEASE FIREFOX_34_0_BUILD1 > _posts/$(date +"%Y-%m-%d")-fx-34-b9-to-rc.md
 
 (don't forget that fennec does not have a RC version, beta 10 instead)
 
