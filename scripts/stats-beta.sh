@@ -77,6 +77,6 @@ echo "<p>List of changesets:"
 
 echo "<table>"
 # Strip the email address
-echo "$LIST"|sed -e "s|<strong>\(.*\) <.*></strong>|<strong>\1</strong>|g" -e "s|Bug \([0-9]*\)|<a href=\"http://bugzilla.mozilla.org/\1\">Bug \1</a>|gi"
+echo "$LIST"|sed -e "s|<strong>\(.*\) <.*></strong>|<strong>\1</strong>|g" -e "s|Bug \([0-9]\+\)|<a href=\"http://bugzilla.mozilla.org/\1\">Bug \1</a>|gi"
 echo "</table>"
 echo "</p>"
