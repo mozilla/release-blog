@@ -23,6 +23,12 @@ fi
 
 cd $DIRECTORY
 
+if grep -q mozilla-release .hg/hgrc; then
+	RELEASE=1
+else
+	RELEASE=0
+fi
+
 REVISION="ancestor($PREV,$CURRENT)::$CURRENT  - ancestor($PREV,$CURRENT)"
 
 STATS=$(hg diff --stat --rev "$REVISION"|tail -1)
@@ -33,6 +39,9 @@ INSERT=$(echo $STATS|sed -e "s|.* \([0-9]*\) insertions.*|\1|g")
 DELETE=$(echo $STATS|sed -e "s|.* \([0-9]*\) deletions(-)|\1|g")
 
 LIST=$(hg log --rev "$REVISION" --template '<tr><td><strong>{author}</strong></td><td>{desc|strip|firstline} - <a href="https://hg.mozilla.org/releases/mozilla-beta/rev/{node|short}">{node|short}</a></td></tr>\n'|grep -v "<strong>ffxbld")
+if test $RELEASE -eq 1; then
+	LIST=$(echo $LIST|sed -e "s|mozilla-beta|mozilla-release|g")
+fi
 
 # get the list of languages used
 LANGUAGES=$(hg diff --rev "$REVISION"|grep +++|sed -e "s|.*\.\(.*\)$|\1|g"|grep -v ^+++|sort |uniq -c|sort -n -r)
