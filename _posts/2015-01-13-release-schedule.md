@@ -60,7 +60,7 @@ A final 2015 schedule for Firefox (Desktop, Mobile and ESR) has been defined.<br
 <td>2015-01-13
 </td></tr></table>
 
-As usual, Desktop, Mobile and ESR are going to be released on the same day.<br /
+As usual, Desktop, Mobile and ESR are going to be released on the same day.
 
 A calendar containing only the date of the release and the merge is available under <a href="https://www.google.com/calendar/feeds/mozilla.com_2d37383433353432352d3939%40resource.calendar.google.com/public/basic">XML</a>, <a href="https://www.google.com/calendar/ical/mozilla.com_2d37383433353432352d3939%40resource.calendar.google.com/public/basic.ics">iCal</a> and <a href="https://www.google.com/calendar/embed?src=mozilla.com_2d37383433353432352d3939%40resource.calendar.google.com">HTML</a>.
 
