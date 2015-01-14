@@ -12,6 +12,8 @@ navigation:
   url: http://wiki.mozilla.org/Release_Management
 - title: Blog
   url: index.html
+- title: Twitter
+  url: https://twitter.com/MozillaReleases
 
 
 github: {
