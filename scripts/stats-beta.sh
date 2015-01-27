@@ -23,6 +23,9 @@ fi
 
 cd $DIRECTORY
 
+# Update of the repository
+hg pull -u > /dev/null
+
 if grep -q mozilla-release .hg/hgrc; then
 	RELEASE=1
 else
