@@ -88,6 +88,6 @@ echo "</p>"
 echo "<p>List of changesets:"
 
 echo "<table>"
-echo "$LIST"|sed -e "s|Bug \([0-9]\+\)|<a href=\"http://bugzilla.mozilla.org/\1\">Bug \1</a>|gi"
+echo "$LIST"|sed -e "s|Bug \([0-9]\+\)|<a href=\"https://bugzilla.mozilla.org/\1\">Bug \1</a>|gi"
 echo "</table>"
 echo "</p>"
