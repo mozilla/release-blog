@@ -42,12 +42,12 @@ A final 2015 schedule for Firefox (Desktop, Mobile and ESR) has been defined.<br
 <tr>
 <td>Firefox 38 (ESR base)
 </td>
-<td>2015-05-19
+<td>2015-05-12
 </td></tr>
 <tr>
 <td>Firefox 37
 </td>
-<td>2015-04-07
+<td>2015-03-31
 </td></tr>
 <tr>
 <td>Firefox 36
