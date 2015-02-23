@@ -43,7 +43,7 @@ DELETE=$(echo $STATS|sed -e "s|.* \([0-9]*\) deletions(-)|\1|g")
 
 LIST=$(hg log --rev "$REVISION" --template '<tr><td><strong>{author|person}</strong></td><td>{desc|firstline|strip|escape} - <a href="https://hg.mozilla.org/releases/mozilla-beta/rev/{node|short}">{node|short}</a></td></tr>\n'|grep -v "<strong>ffxbld")
 if test $RELEASE -eq 1; then
-	LIST=$(echo $LIST|sed -e "s|mozilla-beta|mozilla-release|g")
+	LIST=$(echo "$LIST"|sed -e "s|mozilla-beta|mozilla-release|g")
 fi
 
 # get the list of languages used
