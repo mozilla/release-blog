@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Firefox release schedule update"
+title:  "Firefox release schedule March 16 to 23"
 date:   2015-03-16 
 categories: schedule
 ---
@@ -9,6 +9,7 @@ Here's what's happening with Firefox releases for the week of March 16, 2015.
 
 Monday March 16
     * Beta: Firefox 37.0b6 [desktop][mobile] go to build, last chance for new locales
+    * Release: 36.0.2 [mobile] ship
 Tuesday March 17
     * Beta: Firefox 37.0b6 [desktop][mobile] ship
 Thursday March 19
@@ -23,8 +24,7 @@ Monday March 23
 Cheers,
 
 Your friendly Firefox release managers,
-Liz, Sylvestre, Lukas, Ben, and Lawrence
+Liz, Ben, Lawrence, Lukas, and Sylvestre
 </pre>
-<a href="https://wiki.mozilla.org/Release_Management">https://wiki.mozilla.org/Release_Management</a><br>
 Firefox releases, detailed calendar: <a href="http://bit.ly/1zUHw5G">http://bit.ly/1zUHw5G</a>
 
