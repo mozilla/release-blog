@@ -11,12 +11,12 @@ In order to continue the development of 38 & 38.0.5 in parallel, we merged mozil
 into mozilla-release (m-r).
 
 Before:
-m-b = 38.0.0 beta
-m-r = 37.0.2
+*   m-b = 38.0.0 beta
+*   m-r = 37.0.2
 
 Now:
-m-b = 38.0.5 beta (even if we won't build any for now)
-m-r = 38.0 beta (next one being beta7)
+*   m-b = 38.0.5 beta (even if we won't build any for now)
+*   m-r = 38.0 beta (next one being beta7)
 
 We will do regular m-r => m-b merges to make sure 38.0.5 is up to date.
 
