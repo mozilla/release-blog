@@ -1,5 +1,26 @@
-To run your local instance:
+Test Release Blog Locally
+===========
+
+On Ubuntu/Debian:
+$ git clone the repo
 $ apt-get install jekyll
 $ jekyll serve
+$ Go to http://localhost:4000
+
+On OSX:
+$ git clone the repo
+$ gem install github-pages
+$ cd release-blog 
+$ jekyll serve
+$ Go to http://localhost:4000
+
+
+Flags
+===========
+
+$ --no-watch  (Do not watch for changes)
+$ --watch (Make changes on the fly)
+$ --trace (For debug)
+
 
 
