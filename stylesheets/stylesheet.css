@@ -209,6 +209,15 @@ ul, ol, dl {
   margin-bottom: 20px;
 }
 
+.back-button{
+  font-size: 18px;
+  color: black;
+  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+}
+
+.back-button:hover{
+  background-color: white;
+}
 
 /* COMMON STYLES */
 
