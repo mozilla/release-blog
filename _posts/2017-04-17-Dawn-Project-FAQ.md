@@ -36,7 +36,7 @@ A new feature will merge from Nightly to Beta only when it's deemed ready, based
 
 Tooling such as static analysis, linters, and code coverage will be integrated into the development process
 
-![Dawn planning](/images/posts/dawn_planning.jpg "Dawn planning")
+![Dawn planning](/images/posts/dawn-planning.png "Dawn planning")
 
 # FAQ
 
