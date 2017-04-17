@@ -42,7 +42,7 @@ Tooling such as static analysis, linters, and code coverage will be integrated i
 
 
 ## What will happen to the Aurora population on Desktop?
-The Aurora population will be migrated to the Beta update channel in April ‘17. We plan to keep them on a separate “pre-beta” update channel as compared to the rest of the Beta population. We will use this pre-beta audience to test and improve the stability and quality of initial Beta builds until we are ready to push to 100% of beta population. Because we presented Aurora as a stable product in the past, the beta channel is the closest in terms of stability and quality.
+The Aurora population will be migrated to the Beta update channel in April 2017. We plan to keep them on a separate “pre-beta” update channel as compared to the rest of the Beta population. We will use this pre-beta audience to test and improve the stability and quality of initial Beta builds until we are ready to push to 100% of beta population. Because we presented Aurora as a stable product in the past, the beta channel is the closest in terms of stability and quality.
 
 From the next merge (April 18th), users running 54 Aurora will remain on the Aurora channel but updates will be turned off. In case of critical security issues, we might push new updates to these aurora channel users. Aurora channel users will be migrated to Beta channel in April ‘17. For this to happen, we need to make sure that the Developer Edition features are working the same way on the Beta update channel (theme, profile, etc).
 
