@@ -3,7 +3,6 @@ layout: post
 title:  "Dawn project or the end of Aurora"
 date:   2017-04-17 08:30:23
 categories: firefox release
-published: false
 ---
 
 As described in the [post on the Hacks blog](https://hacks.mozilla.org/2017/04/simplifying-firefox-release-channels/), we are changing the release mechanism of Firefox.
