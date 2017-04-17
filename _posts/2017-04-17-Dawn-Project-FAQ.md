@@ -55,7 +55,7 @@ Aurora channel on Desktop has been around for a long time and has a substantial 
 Fennec Aurora on Google Play is a recent addition and we believe merging this audience with Nightly makes more sense. It also simplifies implementation.
 
 ## I am running Developer Edition, what will happen to me?
-Developer Edition, currently based off Aurora, will be updated to get builds from the Beta branch. There is nothing Developer Edition users need to do, they will automatically to  the Beta build keeping the Developer Edition themes, tools, and preferences as well as  the existing profile.
+Developer Edition, currently based off Aurora, will be updated to get builds from the Beta branch. There is nothing Developer Edition users need to do, they will update automatically to the Beta build keeping the Developer Edition themes, tools, and preferences as well as  the existing profile.
 
 ## Will I still be able to test add-ons with Developer Edition?
 You can continue to test unsigned add-ons on Nightly builds or [load WebExtensions temporarily](https://blog.mozilla.org/addons/2015/12/23/loading-temporary-add-ons/) in Beta and Release builds. 
