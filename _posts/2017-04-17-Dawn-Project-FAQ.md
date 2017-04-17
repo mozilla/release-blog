@@ -33,7 +33,7 @@ Our engineering and release workflow will continue to have additional checks and
 
 We will focus on finding and fixing regressions during the Nightly cycle and alleviate time pressure to ship to reduce the 400-600 patches currently uplifted to Aurora.
 
-A new feature will merge from Nightly to Beta only when it’s deemed ready, based on pre-established criteria determined by engineering, product, and product integrity.
+A new feature will merge from Nightly to Beta only when it's deemed ready, based on pre-established criteria determined by engineering, product, and product integrity.
 
 Tooling such as static analysis, linters, and code coverage will be integrated into the development process
 
@@ -49,7 +49,7 @@ The Aurora population will be migrated to the Beta update channel in April ‘17
 From the next merge (April 18th), users running 54 Aurora will remain on the Aurora channel but updates will be turned off. In case of critical security issues, we might push new updates to these aurora channel users. Aurora channel users will be migrated to Beta channel in April ‘17. For this to happen, we need to make sure that the Developer Edition features are working the same way on the Beta update channel (theme, profile, etc).
 
 ##  What will happen to the Aurora population on Android?
-Because Google play doesn’t allow the migration of a population from an application to another, the fennec population on aurora will be migrated to the nightly application. For now, we are planning to reuse the current [Google play aurora application](https://play.google.com/store/apps/details?id=org.mozilla.fennec_aurora) and replace it by Nightly to preserve the current population.
+Because Google play doesn't allow the migration of a population from an application to another, the fennec population on aurora will be migrated to the nightly application. For now, we are planning to reuse the current [Google play aurora application](https://play.google.com/store/apps/details?id=org.mozilla.fennec_aurora) and replace it by Nightly to preserve the current population.
 
 ## Why are we taking different approaches with the Desktop and Android Aurora populations?
 Aurora channel on Desktop has been around for a long time and has a substantial end-user base that Beta channel will benefit from.
@@ -99,7 +99,7 @@ Updates on aurora channel will be disabled on April 18th. The desktop and aurora
 
 
 ## What criteria will be used to assess feature readiness to move to Beta?
-We will be monitoring crash rates, QE’s sign offs, telemetry data and new regressions to determine overall Nightly quality and feature readiness to merge to Beta.
+We will be monitoring crash rates, QE's sign offs, telemetry data and new regressions to determine overall Nightly quality and feature readiness to merge to Beta.
 
 ## How and who will determine whether a feature is ready to move to Beta?
 End-user facing features will be reviewed for beta-readiness before they are pushed to Beta channel. Following is a list of criteria that will be used to evaluate feature readiness to merge to Beta:
