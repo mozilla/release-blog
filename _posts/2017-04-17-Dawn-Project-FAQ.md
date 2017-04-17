@@ -6,7 +6,7 @@ categories: firefox release
 published: false
 ---
 
-
+As described in the [post on the Hacks blog](https://hacks.mozilla.org/2017/04/simplifying-firefox-release-channels/), we are changing the release mechanism of Firefox.
 
 # What
 
