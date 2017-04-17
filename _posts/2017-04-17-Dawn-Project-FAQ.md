@@ -7,13 +7,14 @@ published: false
 ---
 
 
+
 # What
 
 In order to address the complexity and cycle length issues, the release management team, in coordination with Firefox product management and engineering, is going to remove the Aurora stabilization phase from the cycle.
 
 # When
 
-On April 17th, Firefox 55 will remain on Nightly. This means Firefox 55 will remain on Nightly for two full cycles. On June 13th, Firefox 55 will migrate directly from Nightly to Beta.
+On April 18th, Firefox 55 will remain on Nightly. This means Firefox 55 will remain on Nightly for two full cycles. On June 13th, Firefox 55 will migrate directly from Nightly to Beta.
 
 # Why
 
