@@ -53,17 +53,17 @@ Because Google play doesn't allow the migration of a population from an applicat
 Aurora channel on Desktop has been around for a long time and has a substantial end-user base that Beta channel will benefit from.
 
 Fennec Aurora on Google Play is a recent addition and we believe merging this audience with Nightly makes more sense. It also simplifies implementation.
-
+!
 ## I am running Developer Edition, what will happen to me?
 Developer Edition, currently based off Aurora, will be updated to get builds from the Beta branch. There is nothing Developer Edition users need to do, they will update automatically to the Beta build keeping the Developer Edition themes, tools, and preferences as well as  the existing profile.
 
 ## Will I still be able to test add-ons with Developer Edition?
-You can continue to test unsigned add-ons on Nightly builds or [load WebExtensions temporarily](https://blog.mozilla.org/addons/2015/12/23/loading-temporary-add-ons/) in Beta and Release builds. 
+You can continue to test unsigned add-ons on Nightly builds or [load WebExtensions temporarily](https://blog.mozilla.org/addons/2015/12/23/loading-temporary-add-ons/) in Beta and Release builds.
 
 We are also continuing to provide [unbranded builds](https://wiki.mozilla.org/Add-ons/Extension_Signing#Unbranded_Builds) of the beta and release branches which are able to run unsigned add-ons - including bootstrapped - for development and experimentation. These versions will not be verified by QE, but will receive updates , which is an improvement to the [unbranded builds we currently provide](https://wiki.mozilla.org/Add-ons/Extension_Signing#Unbranded_Builds) for add-on development..
 
 ## How will you mitigate the quality risk from cutting 6-8 weeks of stabilization from the cycle?
-Instead of pushing to 100 % of the beta population at once, we will use a staged rollout mechanism to push to a subset of the beta population. 
+Instead of pushing to 100 % of the beta population at once, we will use a staged rollout mechanism to push to a subset of the beta population.
 For the first phase, we will be pushing to the former aurora population. As a second phase, we will be targeting specific populations (Operating system, graphic card, etc)
 
 In parallel, QE will also do preliminary nightly sign off to detect early new potential issues. Release management will be much more aggressive in term of feature deactivation.
@@ -93,7 +93,7 @@ Yes.  The Developer Edition separate profile feature is a requirement for transi
 
 
 ## What will happen to the Aurora branch after Firefox 54 moves to Beta?
-Updates on aurora channel will be disabled on April 18th. The desktop and aurora populations will be migrated as described above. 
+Updates on aurora channel will be disabled on April 18th. The desktop and aurora populations will be migrated as described above.
 
 
 ## What criteria will be used to assess feature readiness to move to Beta?
@@ -112,13 +112,13 @@ More detailed criteria defined in [this document](https://docs.google.com/docume
 
 
 ## Are there any changes to Release or ESR channel?
-No changes are planned for Release or ESR channel users. 
+No changes are planned for Release or ESR channel users.
 
 ## Does this change how frequently we push mainline builds to Release channel?
 No, but changes added in Nightly can make it into a Release build about 6-8 weeks sooner than they do now.
 
 ## What will happen for l10n process when we remove Aurora?
-Focus for localization will move from mozilla-aurora to mozilla-central. Localization tools (Pootle and Pontoon) will read en-US strings from a special mozilla-central clone: l10n-drivers will review patches with strings landing in the official mozilla-central repository, provide feedback to devs if necessary, and land updates every 2-3 days in this special repository. Localized content will be pushed to l10n-central repositories. 
+Focus for localization will move from mozilla-aurora to mozilla-central. Localization tools (Pootle and Pontoon) will read en-US strings from a special mozilla-central clone: l10n-drivers will review patches with strings landing in the official mozilla-central repository, provide feedback to devs if necessary, and land updates every 2-3 days in this special repository. Localized content will be pushed to l10n-central repositories.
 
 There are no changes for developers working on Firefox: Nightly and mozilla-central remain open to string changes, including the extra six weeks that Firefox 55 will spend in Nightly, while Beta is still considered string frozen, and requests to uplift changes affecting strings are evaluated case by case.
 
@@ -130,8 +130,7 @@ For Firefox and Firefox for Android we will shift to a model with a single repos
 ## How does Dawn impact engineering planning for landing features?
 The biggest shift is that features will have to be completed before merge day. Developers will not be able to finalize feature development during the next branch cycle (as Aurora is used currently). See also “How and who will determine whether a feature is ready to move to Beta?”.
 
-## How will bug fixes and features not tracked by project management be impacted by Dawn? 
+## How will bug fixes and features not tracked by project management be impacted by Dawn?
 Landing bug fixes in Nightly repository continues as before. Development on features that are not directly end-user visible and not tracked by EPMs, release management continues as before.
 
 If Nightly quality and stability is negatively impacted by these untracked features or bug fixes, we will discuss potential mitigation options such as: back outs, stabilizing quality issues before continuing new feature development work, delaying Merge date, imposing code freeze in Nightly until blocking issues are resolved, etc.
-
