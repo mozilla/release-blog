@@ -93,7 +93,7 @@ Yes.  The Developer Edition separate profile feature is a requirement for transi
 
 
 ## What will happen to the Aurora branch after Firefox 54 moves to Beta?
-Updates on aurora channel will be disabled on April 18th. The desktop and aurora populations will be migrated as described above.
+Updates on aurora channel will be disabled on April 18th. The desktop and Android aurora populations will be migrated as described above.
 
 
 ## What criteria will be used to assess feature readiness to move to Beta?
