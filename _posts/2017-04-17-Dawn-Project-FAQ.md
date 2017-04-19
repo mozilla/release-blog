@@ -62,6 +62,8 @@ You can continue to test unsigned add-ons on Nightly builds or [load WebExtensio
 
 We are also continuing to provide [unbranded builds](https://wiki.mozilla.org/Add-ons/Extension_Signing#Unbranded_Builds) of the beta and release branches which are able to run unsigned add-ons - including bootstrapped - for development and experimentation. These versions will not be verified by QE, but will receive updates , which is an improvement to the [unbranded builds we currently provide](https://wiki.mozilla.org/Add-ons/Extension_Signing#Unbranded_Builds) for add-on development..
 
+The majority of Developer Edition users won't experience any disruption. However those developers who rely on unsigned add-ons will need to use Nightly builds until we have finalized the unsigned add-on builds specifically for those developers.
+
 ## How will you mitigate the quality risk from cutting 6-8 weeks of stabilization from the cycle?
 Instead of pushing to 100 % of the beta population at once, we will use a staged rollout mechanism to push to a subset of the beta population.
 For the first phase, we will be pushing to the former aurora population. As a second phase, we will be targeting specific populations (Operating system, graphic card, etc)
