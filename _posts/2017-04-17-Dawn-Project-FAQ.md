@@ -136,3 +136,7 @@ The biggest shift is that features will have to be completed before merge day. D
 Landing bug fixes in Nightly repository continues as before. Development on features that are not directly end-user visible and not tracked by EPMs, release management continues as before.
 
 If Nightly quality and stability is negatively impacted by these untracked features or bug fixes, we will discuss potential mitigation options such as: back outs, stabilizing quality issues before continuing new feature development work, delaying Merge date, imposing code freeze in Nightly until blocking issues are resolved, etc.
+
+## What will happen to the diagnostic assert?
+MOZ_DIAGNOSTIC_ASSERT will enabled during the first part of the beta cycle. It will be automatically disabled when EARLY_BETA_OR_EARLIER is no longer defined.
+
