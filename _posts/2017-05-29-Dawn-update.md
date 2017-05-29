@@ -6,21 +6,20 @@ categories: firefox release
 published: false
 ---
 
-As we explained in the [post on the Hacks blog](https://hacks.mozilla.org/2017/04/simplifying-firefox-release-channels/) and on [this blog](http://release.mozilla.org/firefox/release/2017/04/17/Dawn-Project-FAQ.html), we have been working at changing the release mechanism of Firefox.
+[Project Dawn](http://release.mozilla.org/firefox/release/2017/04/17/Dawn-Project-FAQ.html) will change the Firefox release train model by eliminating the Aurora phrase. (See [the Hacks blog](https://hacks.mozilla.org/2017/04/simplifying-firefox-release-channels/) for more). 
 
-We are now ready migrate the aurora population for Firefox Desktop and Android.
+We have completed all of the required infrastructure changes and are now ready to migrate the Aurora populations for Firefox Desktop and Firefox for Android. We have different migration paths for these two products as described below.
 
 # Desktop
 
-The aurora population will be migrated to the beta channel. Users will keep the Developer Edition branding and specifities. Updates just started to be proposed to users.
-Either the current developer edition instance of Firefox will be automatically updated within a few days, any user can force the update by opening the About window of Firefox.
-From the technical perspective, we are rebuilding the regular beta builds to generate the beta developer edition version. They are built from the same code.
+For Firefox Desktop, the existing Developer Edition (Aurora) users should not notice any change. After the migration their build will still have the Developer Edition branding and the developer specific changes associated with the current Developer Edition build. The technical difference is that the build will be based off our the mozilla-beta branch and, as such, will have the same features and stability as the Beta channel.
+
+We started proposing updates to Developer Edition clients this week. Clients will automatically be updated within a few days or you can force the update by opening the Firefox About window.
 
 
 # Android
 
-In parallel, the current aurora population on Google Play will be upgraded to Nightly.
-The Android application will keep the same application name (org.mozilla.fennec_aurora) while
-providing Firefox for Android nightly.
-This will help detecting Android specific issues earlier in the cycle and mitigating the impact to users.
+For Firefox for Android, the current Aurora population on Google Play will be merged with our existing Nightly populuation. This update will change the branding of the product. In order to make this change, we will now be publishing Nightly to Google Play. Technically, the Android application will keep the same application name (org.mozilla.fennec_aurora) as we do not have a way to change this without requiring manual intervention by the users of this product.
+
+This change will help with the detection of Android specific issues earlier in the cycle so that we can mitigate the impact to Firefox users.
 
