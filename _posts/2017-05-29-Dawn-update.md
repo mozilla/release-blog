@@ -13,7 +13,7 @@ We have completed all of the required infrastructure changes and are now ready t
 
 For Firefox Desktop, the existing Developer Edition (Aurora) users should not notice any change. After the migration their build will still have the Developer Edition branding and the developer specific changes associated with the current Developer Edition build. The technical difference is that the build will be based off our the mozilla-beta branch and, as such, will have the same features and stability as the Beta channel.
 
-We started proposing updates to (Developer Edition clients)[https://www.mozilla.org/firefox/developer/] this week. Clients will automatically be updated within a few days or you can force the update by going to the Help menu and opening the About Firefox window.
+We started proposing updates to [Developer Edition clients](https://www.mozilla.org/firefox/developer/) this week. Clients will automatically be updated within a few days or you can force the update by going to the Help menu and opening the About Firefox window.
 
 
 # Android
