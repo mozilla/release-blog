@@ -3,7 +3,6 @@ layout: post
 title:  "Dawn project - Update on the migration of the aurora populations"
 date:   2017-05-30 08:30:23
 categories: firefox release
-published: false
 ---
 
 [Project Dawn](http://release.mozilla.org/firefox/release/2017/04/17/Dawn-Project-FAQ.html) will change the Firefox release train model by eliminating the Aurora phrase. (See [the Hacks blog](https://hacks.mozilla.org/2017/04/simplifying-firefox-release-channels/) for more). 
