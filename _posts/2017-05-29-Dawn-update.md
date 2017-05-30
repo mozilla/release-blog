@@ -14,12 +14,12 @@ We have completed all of the required infrastructure changes and are now ready t
 
 For Firefox Desktop, the existing Developer Edition (Aurora) users should not notice any change. After the migration their build will still have the Developer Edition branding and the developer specific changes associated with the current Developer Edition build. The technical difference is that the build will be based off our the mozilla-beta branch and, as such, will have the same features and stability as the Beta channel.
 
-We started proposing updates to Developer Edition clients this week. Clients will automatically be updated within a few days or you can force the update by opening the Firefox About window.
+We started proposing updates to (Developer Edition clients)[https://www.mozilla.org/fr/firefox/developer/] this week. Clients will automatically be updated within a few days or you can force the update by opening the Firefox About window.
 
 
 # Android
 
-For Firefox for Android, the current Aurora population on Google Play will be merged with our existing Nightly populuation. This update will change the branding of the product. In order to make this change, we will now be publishing Nightly to Google Play. Technically, the Android application will keep the same application name (org.mozilla.fennec_aurora) as we do not have a way to change this without requiring manual intervention by the users of this product.
+For Firefox for Android, the current Aurora population on Google Play will be merged with our existing Nightly population. This update will change the branding of the product. In order to make this change, we will now be publishing Nightly to Google Play. Technically, the Android application will keep the same application name ((org.mozilla.fennec_aurora)[https://play.google.com/store/apps/details?id=org.mozilla.fennec_aurora]) as we do not have a way to change this without requiring manual intervention by the users of this product.
 
 This change will help with the detection of Android specific issues earlier in the cycle so that we can mitigate the impact to Firefox users.
 
