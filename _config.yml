@@ -14,8 +14,8 @@ navigation:
   url: /
 - title: Twitter
   url: https://twitter.com/MozillaReleases
-- title: Schedule
-  url: http://release.mozilla.org/planning/2015/01/13/release-schedule.html
+- title: Release Calendar
+  url: https://wiki.mozilla.org/RapidRelease/Calendar
 
 
 github: {
