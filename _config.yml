@@ -4,7 +4,7 @@ email: release-mgmt@mozilla.com
 url: "http://release.mozilla.org"
 github: "http://github.com/mozilla/release-blog"
 markdown: redcarpet
-pygments: true
+highlighter: rouge
 
 # Navigation
 navigation:
