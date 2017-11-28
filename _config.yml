@@ -3,7 +3,6 @@ description: "A blog of automated and manual posts regarding Mozilla releases"
 email: release-mgmt@mozilla.com
 url: "http://release.mozilla.org"
 github: "http://github.com/mozilla/release-blog"
-markdown: redcarpet
 highlighter: rouge
 
 # Navigation
