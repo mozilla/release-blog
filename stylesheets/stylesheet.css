@@ -149,6 +149,14 @@ aside#sidebar p.repo-owner a {
   margin-bottom: 40px;
 }
 
+.postheader {
+  color: #474747;
+  border: 1px solid #337BCC;
+  padding: 1em;
+  background-color: #9DDCFF;
+  font-style: italic;
+}
+
 a.button {
   width: 134px;
   height: 58px;
@@ -227,6 +235,7 @@ hr {
   margin-top: 1em;
   padding-bottom: 1em;
   border: none;
+  clear: both;
 }
 
 table {
