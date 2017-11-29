@@ -1,8 +1,16 @@
 ---
 layout: default
 ---
+{% assign author = site.authors[page.author] %}
 <h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<div class="meta">
+{% if author != null %}
+	<img src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=80" style="float:right;">
+	<span class="author">{{ author.display_name }}</span> |
+{% endif %}
+	<span class="date">{{ page.date | date_to_string }}</span>
+</div>
+<hr>
 
 {{ content }}
 

@@ -42,3 +42,17 @@ github: {
     "show_downloads": true,
     "url": "release.mozilla.org", // (or the CNAME)
 }
+
+authors:
+  janx:
+    display_name: Jan Keromnes
+    gravatar: 84ed8c95500cb33a9a53038bb9e8af0e
+    web: http://jan.tools/
+    twitter: jankeromnes
+    github: jankeromnes
+  pascal:
+    display_name: Pascal Chevrel
+    gravatar: 5293fe8fb106a442d842757758d07c56
+    web: https://chevrel.org/
+    twitter: pascalchevrel
+    github: pascalchevrel
