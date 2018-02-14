@@ -6,25 +6,25 @@
     <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="{{ site.description }}. {{ site.extradescription }}">
-    <meta name="image" content="https://release.mozilla.org/images/logos/750px-All-firefox-logos.png">
+    <meta name="image" content="{{ site.url }}/images/logos/750px-All-firefox-logos.png">
 
     <!-- Schema.org for Google -->
     <meta itemprop="name" content="{{ page.title }}">
     <meta itemprop="description" content="{{ site.description }}. {{ site.extradescription }}">
-    <meta itemprop="image" content="https://release.mozilla.org/images/logos/750px-All-firefox-logos.png">
+    <meta itemprop="image" content="{{ site.url }}/images/logos/750px-All-firefox-logos.png">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="{{ page.title }}">
     <meta name="twitter:description" content="{{ site.description }}. {{ site.extradescription }}">
     <meta name="twitter:site" content="@MozillaReleases">
-    <meta name="twitter:image:" content="https://release.mozilla.org/images/logos/750px-All-firefox-logos.png">
+    <meta name="twitter:image:" content="{{ site.url }}/images/logos/750px-All-firefox-logos.png">
 
     <!-- Open Graph general (Facebook, Pinterest & Google+) -->
     <meta property="og:title" content="{{ page.title }}">
     <meta property="og:description" content="{{ site.description }}. {{ site.extradescription }}">
-    <meta property="og:image" content="https://release.mozilla.org/images/logos/750px-All-firefox-logos.png">
-    <meta property="og:url" content="https://release.mozilla.org">
+    <meta property="og:image" content="{{ site.url }}/images/logos/750px-All-firefox-logos.png">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
     <meta property="og:site_name" content="Mozilla Release Management blog">
     <meta property="og:locale" content="en-US">
     <meta property="og:type" content="website">
@@ -68,7 +68,7 @@
                 {% else %}
                 <li>
                 {% endif %}
-                    <a href="{{link.url}}">{{link.title}}</a>
+                    <a href="{{ link.url }}">{{link.title}}</a>
                 </li>
               {% endfor %}
             </ul>

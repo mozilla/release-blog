@@ -2,8 +2,8 @@ title: Release Management Blog
 description: Thoughts and facts on shipping quality software by the team that ships Firefox every 6 to 8 weeks
 extradescription: We talk here about release management at Mozilla, tooling helping decision-making, static analysis and community building around our pre-release channels.
 email: release-mgmt@mozilla.com
-url: "http://release.mozilla.org"
-github: "http://github.com/mozilla/release-blog"
+url: "https://release.mozilla.org"
+github: "https://github.com/mozilla/release-blog"
 highlighter: rouge
 
 # Navigation
@@ -11,7 +11,7 @@ navigation:
 - title: Twitter
   url: https://twitter.com/MozillaReleases
 - title: Team Wiki
-  url: http://wiki.mozilla.org/Release_Management
+  url: https://wiki.mozilla.org/Release_Management
 - title: Release Calendar
   url: https://wiki.mozilla.org/RapidRelease/Calendar
 
