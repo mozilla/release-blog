@@ -1,54 +1,64 @@
 ---
 layout: default
 title: Release Management Blog
+home: true
+prefix: [1,2,3,4,5,6]
 ---
+<div class="content posts-grid hfeed">
+    <!-- This loops through the paginated posts -->
+    {% for post in paginator.posts %}
+    {% assign prefix = page.prefix | sample: 2 %}
 
-<!-- This loops through the paginated posts -->
-{% for post in paginator.posts %}
-  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-  <p class="author">
-    <span class="date">{{ post.date }}</span>
-  </p>
-  <div class="content">
-    {{ post.content }}
-  </div>
-{% endfor %}
+    <article class="post-summary post type-post" >
 
-<!-- Pagination links -->
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">&laquo;&nbsp;Previous </a>
-  {% endif %}
-  <span class="page_number ">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next"> Next&nbsp;»</a>
-  {% endif %}
+      <header class="entry-header">
+        <a href="{{ post.url }}"" class="entry-link" title="Permanent link to “These Weeks in Firefox: Issue 25”" rel="bookmark">
+                  <div class="post-image post-image-large">
+                      <img class="wp-post-image image-fallback color-{{ prefix[0] }}" width="600" height="330" src="https://blog.nightly.mozilla.org/wp-content/themes/frontierline/img/fallbacks/pattern-{{ prefix[0] }}.png">
+                    </div>
+                <h2 class="entry-title">{{ post.title }}</h2>
+        </a>
+
+          <div class="entry-info">
+            <address class="vcard">
+          {% if post.author != null %}
+            <a href="{{ site.authors[post.author].web }}">{{ site.authors[post.author].display_name }}</a>
+        {% endif %}
+        </address>
+          <time class="date">{{ post.date | date_to_string }}</time>
+        </div>
+      </header>
+       {{ post.excerpt | strip_html | truncatewords: 65 }}
+    </article>
+    {% endfor %}
 </div>
 
 
-<hr>
+<!-- Pagination links -->
+
 {% if paginator.total_pages > 1 %}
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
-  {% else %}
-    <span>&laquo; Prev</span>
+<nav class="pagination">
+  <ul class='page-numbers'>
+    {% if paginator.previous_page %}
+    <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Previous</a></li>
   {% endif %}
 
   {% for page in (1..paginator.total_pages) %}
     {% if page == paginator.page %}
-      <em>{{ page }}</em>
+      <li><span class='page-numbers current'>{{ page }}</span></li>
     {% elsif page == 1 %}
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+      <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
     {% else %}
-      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+      <li><a  class='page-numbers' href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
     {% endif %}
   {% endfor %}
 
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+    <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a></li>
   {% else %}
-    <span>Next &raquo;</span>
+    <li><span>Next &raquo;</span></li>
+
   {% endif %}
-</div>
+</ul>
+</nav>
 {% endif %}

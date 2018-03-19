@@ -1,5 +1,5 @@
 title: Release Management Blog
-description: Thoughts and facts on shipping quality software by the team that ships Firefox every 6 to 8 weeks
+description: Thoughts and facts on shipping quality software <br> by the team that ships Firefox every 6 to 8 weeks
 extradescription: We talk here about release management at Mozilla, tooling helping decision-making, static analysis and community building around our pre-release channels.
 email: release-mgmt@mozilla.com
 url: "https://release.mozilla.org"
@@ -56,4 +56,5 @@ authors:
     twitter: pascalchevrel
     github: pascalchevrel
 
-paginate: 4
+paginate: 12
+excerpt_separator: "<!-- more -->"

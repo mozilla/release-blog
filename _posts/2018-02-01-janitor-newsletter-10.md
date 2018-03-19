@@ -6,7 +6,6 @@ categories: tooling janitor
 author: janx
 ---
 
-{:.postheader}
 Jan Keromnes is a Senior Software Engineer working for the Release Management team on tools and automation and is the lead developer for Janitor.<br><br>[Janitor](https://janitor.technology/) offers developer environments as a service for Firefox, Servo and [other open source projects](https://janitor.technology/projects/). It uses [Cloud9 IDE](https://c9.io/) (front-end), [Docker](https://www.docker.com/) servers (back-end), and is 100% web-based so you can jump straight into fresh on-demand environments that are pre-configured and ready for work, without wasting time setting up yet another local checkout or VM.<br><br>This newsletter was initially published on the [Janitor Discourse forum](https://discourse.janitor.technology/t/janitor-news-10/).
 
 Happy 2018 everyone!
