@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US" dir="ltr" class="no-js">
   <head>
     <!-- Generic metadata for search engines-->
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{{ site.description }}. {{ site.extradescription }}">
     <meta name="image" content="{{ site.url }}/images/logos/750px-All-firefox-logos.png">
 
@@ -34,48 +34,116 @@
     <link rel="icon" type="image/png" sizes="196x196" href="/images/favicons/favicon-196x196.png">
     <link rel="shortcut icon" href="/images/favicons/favicon.ico">
 
-    <!-- Fonts and Stylesheets -->
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="/stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="/stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="/stylesheets/print.css" media="print" />
 
     <link rel="alternate" type="application/rss+xml" title="{{ site.root_desc }} - Feed" href="/feed.xml">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" id="frontierline-css" href="/themes/frontierline-rm/style.css" type="text/css" media="all" />
+
   </head>
 
-  <body>
-    <header>
-      <div class="inner">
-        <h1><a href="/">{{ site.title }}</a></h1>
-        <h2>{{ site.description }}</h2>
+  <body class="{% if page.home%}blog{% else %}post-template-default single single-post single-format-standard color-scheme-none pattern-none{% endif %}">
+    <nav id="nav-global" class="nav-global can-stick">
+
+    <div class="content">
+      <div class="logo"><a href="https://www.mozilla.org" rel="external" title="Visit mozilla.org">Mozilla</a></div>
+
+      <p class="fx-cta" style="display:none;"><a href="https://www.mozilla.org/firefox/channel/desktop/#nightly" rel="external" class="button button-green">Download Firefox Nightly</a></p>
+
+      <div class="nav-mozilla">
+        <span class="toggle" role="button" aria-controls="nav-mozilla-menu" aria-expanded="false" tabindex="0">Menu</span>
+        <ul class="nav-mozilla-menu" id="nav-mozilla-menu">
+          <li class="nav-global-twitter"><a href="https://twitter.com/MozillaReleases" rel="external">Twitter</a></li>
+          <li class="nav-global-firefoxDISABLE"><a href="https://wiki.mozilla.org/Release_Management" rel="external">Documentation</a></li>
+          <li class="nav-global-donateDISABLE"><a href="https://wiki.mozilla.org/RapidRelease/Calendar" rel="external">Release calendar</a></li>
+        </ul>
       </div>
-    </header>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
+      <a class="page-top" href="#masthead" title="Go to the top of the page">Top</a>
+    </div>
+  </nav>
 
-          {{ content }}
+  <header id="masthead" class="section">
+    <div class="site-id">
+      <div class="site-title-wrap content">
+            <h1 id="site-title"><span>{{ site.title }}</span></h1>
+              <p id="site-description"><span>{{ site.description }}</span></p>
+                </div>
+    </div>
+  </header>
+  <div class="site-wrap">
 
-        </section>
+  <nav id="nav-util" class="can-stick ">
+    <ul class="content">
+  <li>
+  </li>
+    </ul>
+  </nav>
 
-        <aside id="sidebar">
-          <nav class="nav-primary" role="navigation">
-            <ul>
-                {% for link in site.navigation %}
-                {% if page.url == link.url %}
-                <li class="active">
-                {% else %}
-                <li>
-                {% endif %}
-                    <a href="{{ link.url }}">{{link.title}}</a>
-                </li>
-              {% endfor %}
-            </ul>
-          </nav>
-        </aside>
+    <main id="content" role="main">
+
+    {{ content }}
+
       </div>
     </div>
+</main>
+  </div><!-- /.site-wrap -->
 
+
+
+<footer id="site-info" class="section">
+  <div class="content">
+    <nav class="primary">
+      <div class="logo">
+        <a href="https://www.mozilla.org/?utm_source=release.mozilla.org&amp;utm_campaign=footer&amp;utm_medium=referral" data-link-type="footer" data-link-name="Mozilla">Mozilla</a>
+      </div>
+      <section class="mozilla">
+        <h5><a href="https://www.mozilla.org/?utm_source=release.mozilla.org&amp;utm_campaign=footer&amp;utm_medium=referral" data-link-type="footer" data-link-name="Mozilla">Mozilla</a></h5>
+        <ul class="mozilla-links">
+          <li><a href="https://www.mozilla.org/about/?utm_source=release.mozilla.org&amp;utm_campaign=footer&amp;utm_medium=referral" data-link-type="footer" data-link-name="About">About</a></li>
+          <li><a href="https://www.mozilla.org/contact/?utm_source=release.mozilla.org&amp;utm_campaign=footer&amp;utm_medium=referral" data-link-type="footer" data-link-name="Contact Us">Contact Us</a></li>
+          <li><a href="https://donate.mozilla.org/?presets=50,30,20,10&amp;amount=30&amp;currency=usd&amp;utm_source=release.mozilla.org&amp;utm_campaign=footer&amp;utm_medium=referral" class="donate" data-link-type="footer" data-link-name="Donate">Donate</a></li>
+          <li>
+            <ul class="social-links">
+              <li><a class="twitter" href="https://twitter.com/mozilla" data-link-type="footer" data-link-name="Twitter (@mozilla)">Twitter<span> (@mozilla)</span></a></li>
+              <li><a class="facebook" href="https://www.facebook.com/mozilla" data-link-type="footer" data-link-name="Facebook (Mozilla)">Facebook<span> (Mozilla)</span></a></li>
+              <li><a class="instagram" href="https://www.instagram.com/mozillagram/" data-link-type="footer" data-link-name="Instagram (@mozillagram)">Instagram<span> (@mozillagram)</span></a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section class="firefox">
+        <h5><a href="https://www.mozilla.org/firefox/?utm_source=release.mozilla.org&amp;utm_campaign=footer&amp;utm_medium=referral" data-link-type="footer" data-link-name="Mozilla">Firefox</a></h5>
+        <ul class="firefox-links">
+          <li><a href="https://www.mozilla.org/firefox/new/?utm_source=release.mozilla.org&amp;utm_campaign=footer&amp;utm_medium=referral" data-link-type="footer" data-link-name="Download Firefox">Download Firefox</a></li>
+          <li><a href="https://www.mozilla.org/firefox/?utm_source=release.mozilla.org&amp;utm_campaign=footer&amp;utm_medium=referral" data-link-type="footer" data-link-name="Desktop">Desktop</a></li>
+          <li><a href="https://www.mozilla.org/firefox/mobile/?utm_source=release.mozilla.org&amp;utm_campaign=footer&amp;utm_medium=referral" data-link-type="footer" data-link-name="Mobile">Mobile</a></li>
+          <li><a href="https://www.mozilla.org/firefox/features/?utm_source=release.mozilla.org&amp;utm_campaign=footer&amp;utm_medium=referral" data-link-type="footer" data-link-name="Features">Features</a></li>
+          <li><a href="https://www.mozilla.org/firefox/channel/desktop/?utm_source=release.mozilla.org&amp;utm_campaign=footer&amp;utm_medium=referral" data-link-type="footer" data-link-name="Beta, Nightly, Developer Edition">Beta, Nightly, Developer Edition</a></li>
+          <li>
+            <ul class="social-links">
+              <li><a class="twitter" href="https://twitter.com/firefox" data-link-type="footer" data-link-name="Twitter (@firefox)">Twitter<span> (@firefox)</span></a></li>
+              <li><a class="facebook" href="https://www.facebook.com/Firefox" data-link-type="footer" data-link-name="Facebook (Firefox)">Facebook<span> (Firefox)</span></a></li>
+              <li><a class="youtube" href="https://www.youtube.com/firefoxchannel" data-link-type="footer" data-link-name="YouTube (firefoxchannel)">YouTube<span> (firefoxchannel)</span></a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </nav>
+
+    <nav class="secondary">
+        <div class="small-links">
+          <ul>
+            <li><a rel="nofollow" href="https://www.mozilla.org/privacy/" data-link-type="footer" data-link-name="Privacy">Website Privacy Notice</a></li>
+            <li><a rel="nofollow" href="https://www.mozilla.org/privacy/websites/#cookies" data-link-type="footer" data-link-name="Cookies">Cookies</a></li>
+            <li><a rel="nofollow" href="https://www.mozilla.org/about/legal/" data-link-type="footer" data-link-name="Legal">Legal</a></li>
+          </ul>
+          <p class="license">
+          Portions of this content are ©1998-2018 by individual contributors. Content available under a <a href="https://www.mozilla.org/foundation/licensing/website-content/" rel="external license">Creative Commons license</a>.          </p>
+        </div>
+    </nav>
+  </div>
+</footer>
   </body>
 </html>

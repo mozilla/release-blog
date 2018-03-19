@@ -1,0 +1,179 @@
+/*
+Theme Name:     Frontierline - Nightly
+Description:    The Firefox Nightly blog, a child theme of Frontierline.
+Author:         Craig Cook, Kohei Yoshino
+Template:       frontierline
+Version:        1.0
+*/
+
+@import url('../frontierline/style.css');
+
+.nav-global-twitter a,
+.nav-global-join a {
+    padding-left: 30px;
+}
+
+.nav-global-twitter a::before,
+.nav-global-join a::before {
+    display: inline-block;
+    margin: 0 5px -.35em -30px;
+    width: 25px;
+    height: 20px;
+    -webkit-background-size: 25px 200px;
+    background-size: 25px 200px;
+    background-image: url("img/icon-sprite.svg");
+    background-repeat: no-repeat;
+    content: '';
+}
+
+.nav-global-twitter a::before {
+    background-position: 0 -160px;
+}
+
+.nav-global-twitter a:hover::before,
+.nav-global-twitter a:focus::before {
+    background-position: 0 -180px;
+}
+
+.nav-global-join a::before {
+    background-position: 0 -120px;
+}
+
+.nav-global-join a:hover::before,
+.nav-global-join a:focus::before {
+    background-position: 0 -140px;
+}
+
+.nav-global .fx-cta {
+    display: none;
+}
+
+.nav-global .fx-cta .button {
+    font-size: 12px;
+    font-size: .75rem;
+    padding: .15em 20px;
+    margin: -.25em 0 0;
+}
+
+.fx-footer {
+    border-top: 1px solid #ccc;
+    padding: 30px 0 0;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.fx-footer h4 {
+    margin-bottom: 1em;
+}
+
+#social * {
+    font-family: inherit !important;
+}
+
+#social .social-post,
+#social-tabs-comments {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 auto !important;
+    padding: 20px !important;
+    min-width: 300px;
+}
+
+#social #reply-title {
+    padding: 0 !important;
+    font-size: 28px;
+    font-size: 1.75rem;
+    font-weight: bold;
+    background-image: none !important;
+}
+
+#social #respond textarea.social-input,
+#social #respond input.social-input {
+    width: 100%;
+    max-width: 100% !important;
+}
+
+#social .social-comment-body {
+    line-height: 1.6 !important;
+}
+
+#social .social-replied {
+    display: inline-block !important;
+    position: static !important;
+}
+
+@media screen and (max-width: 460px) {
+    #social .social-sign-in-links a {
+        display: block !important;
+        float: none !important;
+        margin: 15px auto !important;
+    }
+}
+
+@media screen and (min-width: 460px) {
+    .nav-global .fx-cta {
+        display: inline-block;
+        float: right;
+        margin: -.25em 20px 0;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    #social .social-post,
+    #social-tabs-comments {
+        width: 460px;
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .nav-global .fx-cta {
+        float: right;
+        margin: .25em 0 0 10px;
+    }
+
+    .nav-global .fx-cta .button {
+        padding: .25em 20px;
+        font-size: 16px;
+        font-size: 1rem;
+        border-width: 2px;
+        -webkit-transition: font-size 250ms ease-in-out, padding 250ms ease-in-out;
+                transition: font-size 250ms ease-in-out, padding 250ms ease-in-out;
+    }
+
+    .nav-global.is-minified .fx-cta {
+        margin: -.25em 0 0 20px;
+    }
+
+    .nav-global.is-minified .fx-cta .button {
+        font-size: 12px;
+        padding: .15em 20px;
+    }
+
+    #social .social-post,
+    #social-tabs-comments {
+        width: 740px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #social .social-post,
+    #social-tabs-comments {
+        width: 980px;
+    }
+}html { margin-top: 32px !important; }
+* html body { margin-top: 32px !important; }
+@media screen and ( max-width: 782px ) {
+    html { margin-top: 46px !important; }
+    * html body { margin-top: 46px !important; }
+}
+
+/* RM blog additons */
+@media screen and (min-width: 480px) {
+#site-description {
+       line-height: initial;
+    }
+#masthead {
+  background-image: url('/themes/frontierline-rm/img/fox-tail.png');
+}
+}

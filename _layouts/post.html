@@ -1,17 +1,29 @@
 ---
 layout: default
+bodyclasses: "post-template-default single single-post single-format-standard color-scheme-none pattern-none"
 ---
+{{ page.bodyclasses }}
 {% assign author = site.authors[page.author] %}
-<h2>{{ page.title }}</h2>
-<div class="meta">
-{% if author != null %}
-	<img src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=80" style="float:right;">
-	<span class="author">{{ author.display_name }}</span> |
-{% endif %}
-	<span class="date">{{ page.date | date_to_string }}</span>
+<div class="content">
+<article class="post type-post format-standard hentry">
+
+  <header class="entry-header">
+
+    <h1 class="entry-title">{{ page.title }}</h1>
+
+      <div class="entry-info">
+        <address class="vcard">
+      {% if author != null %}
+        <a href="{{ site.authors[post.author].web }}" rel="author">{{ author.display_name }}</a>
+    {% endif %}
+    </address>
+      <time class="date">{{ page.date | date_to_string }}</time>
+    </div>
+
+  </header>
+  <div class="entry-content">
+  {{ content }}
+  </div>
+
+</article>
 </div>
-<hr>
-
-{{ content }}
-
-<a class="back-button" href="/" >&lt;&lt; Return to list of posts</a>
