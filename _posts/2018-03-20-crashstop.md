@@ -36,7 +36,7 @@ Recently, I added stuff to show startup crashes, for example in [bug 1435779](ht
 * I added icons for impacted platforms.
 * Click on signatures or versions to get more information from [Socorro](https://crash-stats.mozilla.com/).
 
-All feedback is welcome and appreciated! If you want to request features or more data, or report an error, please feel free to file a bug on github (see [3]).
+All feedback is welcome and appreciated! If you want to request features or more data, or report an error, please feel free to file a bug on GitHub.
 
 
 ## Source Code and extension download
