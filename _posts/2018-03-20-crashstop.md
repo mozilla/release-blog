@@ -2,7 +2,7 @@
 layout: post
 title:  "Crash-Stop, an extension to help handle crashes on Bugzilla"
 date:   2018-03-20 07:00:00
-categories: events fosdem
+categories: tooling crashstop
 author: calixte
 ---
 <b>Crash-stop</b> is a webextension I wrote for Bugzilla to display crash stats by builds and patch information.
