@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Crash-Stop, an extension to help handle crashes on Bugzilla"
-date:   2018-03-20 12:00:00
+date:   2018-03-20 07:00:00
 categories: events fosdem
 author: calixte
 ---
