@@ -55,6 +55,12 @@ authors:
     web: https://chevrel.org/
     twitter: pascalchevrel
     github: pascalchevrel
+  calixte:
+    display_name: Calixte Denizet
+    gravatar: 1c26d49ffb62a4106644da39c7e6fb4c
+    web: https://mozillians.org/fr/u/cdenizet/
+    twitter: calixteman
+    github: calixteman
 
 paginate: 12
 excerpt_separator: "<!-- more -->"
