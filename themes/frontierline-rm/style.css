@@ -161,19 +161,69 @@ Version:        1.0
     #social-tabs-comments {
         width: 980px;
     }
-}html { margin-top: 32px !important; }
-* html body { margin-top: 32px !important; }
+}
+
+html {
+    margin-top: 32px !important;
+}
+
+* html body {
+    margin-top: 32px !important;
+}
+
 @media screen and ( max-width: 782px ) {
     html { margin-top: 46px !important; }
     * html body { margin-top: 46px !important; }
 }
 
-/* RM blog additons */
+/* RM blog additions */
 @media screen and (min-width: 480px) {
-#site-description {
-       line-height: initial;
+    #site-description {
+           line-height: initial;
+        }
+    #masthead {
+      background-image: url('/themes/frontierline-rm/img/fox-tail.png');
     }
-#masthead {
-  background-image: url('/themes/frontierline-rm/img/fox-tail.png');
 }
+
+/* Author picture styling */
+.entry-info .author-photo {
+    float: right;
+    box-shadow: 0 4px 6px rgba(0,0,0,.3);
+    border: 1px solid lightgray;
+    margin: -1em 0 0em 1em;
+    padding: 10px 10px 1em 10px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    transform: rotate(5deg);
+    font-weight: bold;
+    font-family: cursive;
+    font-style: italic;
+    border-radius: 2px;
+}
+
+.entry-info .author-photo::after {
+    content: attr(alt);
+}
+
+.entry-info .author-photo img {
+    border: 1px solid darkgray;
+    margin-bottom: 1.5em;
+}
+/* end of author picture styling */
+
+/* Aside element in blog post */
+
+.entry-content aside {
+    float: left;
+    width: 200px;
+    margin: 0.5em 1em 0 0;
+    padding: 0.5em;
+    color: #fff;
+    background: #000;
+    font-style: italic;
+    text-align: center;
 }

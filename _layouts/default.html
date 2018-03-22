@@ -67,7 +67,11 @@
   <header id="masthead" class="section">
     <div class="site-id">
       <div class="site-title-wrap content">
+        {% if page.home%}
             <h1 id="site-title"><span>{{ site.title }}</span></h1>
+        {% else %}
+        <a href="/"><h1 id="site-title"><span>{{ site.title }}</span></h1></a>
+        {% endif %}
               <p id="site-description"><span>{{ site.description }}</span></p>
                 </div>
     </div>

@@ -4,6 +4,7 @@ bodyclasses: "post-template-default single single-post single-format-standard co
 ---
 {{ page.bodyclasses }}
 {% assign author = site.authors[page.author] %}
+
 <div class="content">
 <article class="post type-post format-standard hentry">
 
@@ -12,10 +13,15 @@ bodyclasses: "post-template-default single single-post single-format-standard co
     <h1 class="entry-title">{{ page.title }}</h1>
 
       <div class="entry-info">
+
+      {% if author.gravatar != null %}
+        <a href="{{ author.web }}" class="author-photo"  alt="{{ author.display_name }}"><img src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=128"></a>
+      {% endif %}
         <address class="vcard">
       {% if author != null %}
         <a href="{{ site.authors[post.author].web }}" rel="author">{{ author.display_name }}</a>
-    {% endif %}
+      {% endif %}
+
     </address>
       <time class="date">{{ page.date | date_to_string }}</time>
     </div>
