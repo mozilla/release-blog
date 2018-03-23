@@ -26,7 +26,7 @@ Untested code, instead, can be really problematic. Changes to this code can take
 A study from [Google Test Automation Conference 2016](https://www.youtube.com/watch?v=NKEptA3KP08) showed that an uncovered line (or method) is twice as likely to have a bug fix than a covered line (or method).
 On top of that, testing a feature prevents unexpected behavior changes.
 
-Using these reports, we have managed to [remove a good amount of code](https://bugzilla.mozilla.org/show_bug.cgi?id=1415819) from mozilla-central, so far around 60 files with thousands of lines of code. We’arm confident that there’s even more code that we could remove or conditionally compile only if needed.
+Using these reports, we have managed to [remove a good amount of code](https://bugzilla.mozilla.org/show_bug.cgi?id=1415819) from mozilla-central, so far around 60 files with thousands of lines of code. We are confident that there’s even more code that we could remove or conditionally compile only if needed.
 
 As any modern software, Firefox relies a lot on third party libraries. Currently, most (all?) the content of these libraries is built by default. For example,~400 files are untested in the gfx/skia/ directory).
 
