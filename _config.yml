@@ -43,24 +43,29 @@ github: {
 }
 
 authors:
-  janx:
-    display_name: Jan Keromnes
-    gravatar: 84ed8c95500cb33a9a53038bb9e8af0e
-    web: http://jan.tools/
-    twitter: jankeromnes
-    github: jankeromnes
-  pascal:
-    display_name: Pascal Chevrel
-    gravatar: 5293fe8fb106a442d842757758d07c56
-    web: https://chevrel.org/
-    twitter: pascalchevrel
-    github: pascalchevrel
   calixte:
     display_name: Calixte Denizet
     gravatar: 1c26d49ffb62a4106644da39c7e6fb4c
     web: https://mozillians.org/fr/u/cdenizet/
     twitter: calixteman
     github: calixteman
+  janx:
+    display_name: Jan Keromnes
+    gravatar: 84ed8c95500cb33a9a53038bb9e8af0e
+    web: http://jan.tools/
+    twitter: jankeromnes
+    github: jankeromnes
+  marco:
+    display_name: Marco Castelluccio
+    gravatar: 16d4d4a441724e006b342ac12507caef
+    web: https://marco-c.github.io/
+    github: marco-c
+  pascal:
+    display_name: Pascal Chevrel
+    gravatar: 5293fe8fb106a442d842757758d07c56
+    web: https://chevrel.org/
+    twitter: pascalchevrel
+    github: pascalchevrel
 
 paginate: 12
 excerpt_separator: "<!-- more -->"
