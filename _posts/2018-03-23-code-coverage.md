@@ -8,7 +8,7 @@ author: marco
 
 One of the nice things we can do with code coverage data is looking at which files are completely not covered by any test.
 
-<aside>This article was initially published on Marco Casteluccio's <a href="https://marco-c.github.io/">blog</a>.</aside>
+<aside>This article was initially published on Marco Casteluccio's <a href="https://marco-c.github.io/2018/03/27/zero-coverage-reports.html">blog</a>.</aside>
 
 These files might be interesting for two reasons. Either they are:
 <ol style="list-style-type:lower-alpha; list-style-position: inside;">
