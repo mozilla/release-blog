@@ -66,6 +66,12 @@ authors:
     web: https://chevrel.org/
     twitter: pascalchevrel
     github: pascalchevrel
+  sylvestre:
+    display_name: Sylvestre Ledru
+    gravatar: 5aa2e382197a147b42d020b6878f8623
+    web: https://sylvestre.ledru.info/
+    twitter: SylvestreLedru
+    github: sylvestre
 
 paginate: 12
 excerpt_separator: "<!-- more -->"
