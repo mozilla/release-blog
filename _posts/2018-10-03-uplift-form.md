@@ -8,7 +8,7 @@ author: sylvestre
 
 Firefox is shipped using a train model. Without going into too much details, this means that we maintain several channel in parallel (Nightly, Beta, Release and ESR). Normal changes happen in Nightly. When a change needs to be cherry-picked from Nightly to another branch, the process is called "Uplift".
 
-Uplift is a key tool in the Firefox release management world. When developers want to apply a patch from Nightly to another branch, they will use Bugzilla, answering some questions in a textarea. Then, release managers will make a risk assessment to accept or reject the uplift.
+Uplifting is a key tool in the Firefox release management world. When developers want to apply a patch from Nightly to another branch, they will use Bugzilla, answering some questions in a textarea. Then, release managers will make a risk assessment to accept or reject the uplift.
 As an example, release managers will see the following comment:
 ![Uplift form](/images/posts/uplift-form/old.png "Uplift form"){: .center-image }
 
