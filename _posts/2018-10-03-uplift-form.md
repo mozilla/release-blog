@@ -2,7 +2,7 @@
 layout: post
 title:  "Uplift forms get a refresh"
 date:   2018-10-03 16:00:00
-categories: uplift bugzilla
+categories: tooling bugzilla
 author: sylvestre
 ---
 
