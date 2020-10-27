@@ -42,6 +42,6 @@ $ Go to http://localhost:4000
 Flags
 ===========
 
-$ --no-watch  (Do not watch for changes)
-$ --watch (Make changes on the fly)
-$ --trace (For debug)
+* `$ --no-watch` (Do not watch for changes)
+* `$ --watch` (Make changes on the fly)
+* `$ --trace` (For debug)
