@@ -1,5 +1,10 @@
-Test Release Blog Locally
-===========
+ # :warning: WARNING:
+ 
+ # This Repository is in maintenance mode, issues are disabled and we don't take pull requests.
+
+
+### Test Release Blog Locally
+
 
 The release blog runs on Jekyll. Jekyll is a Ruby framework, therefore the Ruby language should be installed on your OS.
 
@@ -39,9 +44,8 @@ $ bundle exec jekyll serve
 $ Go to http://localhost:4000
 ```
 
-Flags
-===========
+### Flags
 
-$ --no-watch  (Do not watch for changes)
-$ --watch (Make changes on the fly)
-$ --trace (For debug)
+* `$ --no-watch` (Do not watch for changes)
+* `$ --watch` (Make changes on the fly)
+* `$ --trace` (For debug)
