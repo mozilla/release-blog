@@ -39,10 +39,12 @@ $ sudo apt install zlib1g-dev # Dependency requirement for the nokogiri gem
 $ git clone https://github.com/mozilla/release-blog.git
 $ cd release-blog
 $ gem install bundler --user-install
-$ bundle install --path vendor/bundle
+$ bundle config set path 'vendor/bundle'
+$ bundle install
 $ bundle exec jekyll serve
 $ Go to http://localhost:4000
 ```
+You may need to set up a personal token from GitHub even when running locally.
 
 ### Flags
 
