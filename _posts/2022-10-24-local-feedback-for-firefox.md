@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Firefox Regional feedback:<br>Let's start with Europe"
+title:  "Firefox Regional feedback: Let's start with Europe"
 date:   2022-11-18 00:00:00
 categories: firefox community
 author: pascal
