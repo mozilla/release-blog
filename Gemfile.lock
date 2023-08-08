@@ -10,7 +10,7 @@ GEM
       public_suffix (>= 2.0.2, < 6.0)
     coffee-script (2.4.1)
       coffee-script-source
-      execjs
+      reactjs
     coffee-script-source (1.11.1)
     colorator (1.1.0)
     commonmarker (0.23.9)
